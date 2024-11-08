@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppOrdemServico.View.Login.LoginView"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="LightGray" >
+    <Grid RowDefinitions="*,*,*">
+        <Border
+            BackgroundColor="Blue" 
+            HeightRequest="550"
+            WidthRequest="400" 
+            StrokeShape="RoundRectangle 80">
+            <Label 
+                Text="Preencha as informações abaixo para efetuar login" 
+                TextColor="White" 
+                FontAttributes="Bold" 
+                VerticalOptions="Center" 
+                FontSize="18"
+                HorizontalOptions="Center" 
+                HorizontalTextAlignment="Center" />
+        </Border>
+        <Border
+            Grid.Row="1"
+            BackgroundColor="White"
+            Margin="60,-50,60,-50"
+            StrokeShape="RoundRectangle 20">
+            <Grid 
+                RowDefinitions="auto,auto,auto,auto"
+                VerticalOptions="Center">
+                <Label 
+                    Text="Acesso Login"
+                    HorizontalOptions="Center" 
+                    Margin="0,-30,0,0" 
+                    FontSize="18"/>
+                <Entry 
+                    Grid.Row="1" 
+                    Placeholder="Login"
+                    Margin="10,20,10,20"
+                    />
+                <Entry 
+                    Grid.Row="2" 
+                    Placeholder="Senha"
+                    Margin="10,0,10,60"/>
+                <Button 
+                    Grid.Row="3"
+                    Text="Entrar"
+                    Margin="10,0,10,0"
+                    CornerRadius="20"
+                    BackgroundColor="Blue"/>
+            </Grid>
+            <Border.Shadow>
+                <Shadow
+                    Brush="Gray"
+                    Opacity="0.3"
+                    Radius="5"
+                    Offset="5,5"/>
+            </Border.Shadow>
+        </Border>
+        <Label 
+            Grid.Row="2" 
+            Text="Não tem acesso?" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+        <Label 
+            Grid.Row="2" 
+            Text="Clice aqui"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Margin="0,50,0,0"/>
+    </Grid>
+</ContentPage>
