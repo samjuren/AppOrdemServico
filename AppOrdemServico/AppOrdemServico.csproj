@@ -63,9 +63,41 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Model\" />
-	  <Folder Include="ModelView\" />
-	  <Folder Include="View\" />
+	  <Folder Include="Model\Login\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Remove="ModelView\Login\**" />
+	  <MauiXaml Remove="ModelView\**" />
+	  <MauiXaml Remove="AppShell.xaml" />
+	  <MauiXaml Remove="MainPage.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiCss Remove="ModelView\Login\**" />
+	  <MauiCss Remove="ModelView\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Remove="ModelView\Login\**" />
+	  <Compile Remove="ModelView\**" />
+	  <Compile Remove="AppShell.xaml.cs" />
+	  <Compile Remove="MainPage.xaml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Remove="ModelView\Login\**" />
+	  <EmbeddedResource Remove="ModelView\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <AndroidAarLibrary Remove="ModelView\Login\**" />
+	  <AndroidAarLibrary Remove="ModelView\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="ModelView\Login\**" />
+	  <None Remove="ModelView\**" />
 	</ItemGroup>
 
 </Project>

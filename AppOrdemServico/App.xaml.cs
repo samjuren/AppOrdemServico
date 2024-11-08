@@ -1,4 +1,6 @@
-﻿namespace AppOrdemServico
+﻿using AppOrdemServico.View.Login;
+
+namespace AppOrdemServico
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new LoginView());
         }
     }
 }
